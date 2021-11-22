@@ -1,0 +1,23 @@
+{
+  "name": "balex-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lassev05/balex-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lassev05/balex-ai/issues"
+  },
+  "homepage": "https://github.com/lassev05/balex-ai#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
