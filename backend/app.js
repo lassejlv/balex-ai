@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
+const apiRoutes = require("./src/routes/api");
 
-app.listen("/", (req, res) => {
-  res.send("hi");
+app.get("/", (req, res) => {
+  res.send(202);
 });
 
-app.listen(3000, () => console.log("Server is up and running!"));
+app.use("/api", apiRoutes);
+
+app.listen(3000, () => console.info("Server is up and running!"));
