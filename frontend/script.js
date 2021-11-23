@@ -6,5 +6,5 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     let result = document.getElementById("result");
-    result.innerHTML = data.map((item) => `<p>${item}</p>`).join("");
+    result.innerHTML = data.map((item) => `${item} <br><br>`).join("");
   });
