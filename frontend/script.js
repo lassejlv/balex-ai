@@ -1,9 +1,5 @@
-let url = "http://localhost:3000/api/v1/resultater";
-
-// fetch data from a api and console.log it
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+let url =
+  "http://localhost:3000/api/v1/resultater?api_key=05a90e6d-e942-4b71-85c9-85fd246d2d68";
 
 // fetch data from an api and innerHTML it to a div
 fetch(url)
