@@ -3,18 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Et afgangs projekt for 9. klasse hvor du kan spørge om hvad du vil!"
+    />
 
     <!-- HypeStyle CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/hypestyle@0.1.1/dist/hypestyle.min.css"
     />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <title>Yeah i using HypeStyle CSS!</title>
+    <title>Balex AI</title>
   </head>
-  <body>
-    <div class="text-center mt-5">
-      <p id="result" class="card m-8 pt-3 pb-3"></p>
+  <body class="bg-black">
+    <div
+      class="text-center mt-5 card m-8 pt-3 pb-3"
+      style="border-color: lightblue !important"
+    >
+      <label class="card-title text-white">Stil mig et spørgsmål</label>
+      <br />
+      <input
+        style="
+          width: 70%;
+          height: 3rem;
+          padding: 12px 20px;
+          box-sizing: border-box;
+        "
+        placeholder="Her kan du skrive dit spørgsmål"
+        class="card-body mt-1"
+        type="text"
+        id="question"
+      />
+      <br />
+      <br />
+      <button
+        class="btn btn-purple text-white font-md"
+        style="transition: background-color 0.3s"
+        id="ask"
+      >
+        Spørg <i class="fas fa-arrow-right"></i>
+      </button>
+      <br />
+      <br />
+      <br />
+      <p class="font-lg text-yellow-light-3" id="result"></p>
     </div>
 
     <script src="script.js"></script>
