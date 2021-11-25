@@ -21,3 +21,10 @@ const ask = document
         result.innerHTML = data[random];
       });
   });
+
+const q = document.getElementById("question")
+if (q.length === 0) {
+  alert("there is no data!")
+} else {
+  console.log("der er data")
+}
