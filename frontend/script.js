@@ -6,7 +6,7 @@ const ask = document
   .getElementById("ask")
   .addEventListener("click", function () {
     // fetch data from an api and innerHTML it to a div
-    fetch(url2)
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         // if there is no data, display alert message
@@ -22,9 +22,9 @@ const ask = document
       });
   });
 
-const q = document.getElementById("question")
+const q = document.getElementById("question");
 if (q.length === 0) {
-  alert("there is no data!")
+  alert("there is no data!");
 } else {
-  console.log("der er data")
+  console.log("der er data");
 }
